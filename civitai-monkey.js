@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         CivitAI resource downloader
-// @version      0.0.1
+// @version      0.1
 // @description  Extract resources required to re-create a civitai generation and downloads them
 // @author       bytenerdalpha
 // @match        https://*civitai.com/images/*
