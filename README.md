@@ -46,6 +46,8 @@ cp env.template .env
 * Run the python script:
 ```shell
 python civitai-fast.py
+or
+double click on start.bat file (windows)
 ```
 
 * This will run the python server and will listen for download instructions from the browser script
