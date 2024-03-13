@@ -6,7 +6,7 @@
 // @match        https://*civitai.com/images/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=civitai.com
 // @grant        GM.xmlHttpRequest
-// @updateURL
+// @updateURL    https://raw.githubusercontent.com/bytenerdalpha/civitai-download-helper/main/civitai-monkey.js
 // ==/UserScript==
 
 // settings
