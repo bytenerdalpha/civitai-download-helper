@@ -5,7 +5,7 @@ A combination of tapermonkey/violentmonkey/greasemonkey script for the browser a
 You will need tapermonkey or violentmonkey or greasemonkey or any flavour based on them.
 Install the browser script by clicking on this icon:
 
-[![install](https://user-images.githubusercontent.com/118488816/202579095-03336ed4-80ae-4066-b764-3636772a4fb6.png)](https://raw.githubusercontent.com/bytenerdalpha/civitai-download-helper/main/civitai-monkey.js)
+[![install](https://user-images.githubusercontent.com/118488816/202579095-03336ed4-80ae-4066-b764-3636772a4fb6.png)](https://raw.githubusercontent.com/bytenerdalpha/civitai-download-helper/main/civitai-monkey.user.js)
 
 it will override the close button on the image pages:
 
