@@ -9,8 +9,6 @@
 // @updateURL    https://raw.githubusercontent.com/bytenerdalpha/civitai-download-helper/main/civitai-monkey.js
 // ==/UserScript==
 
-// settings
-
 // Define svg path data for the icons to be used in the extension, one for JSON, one for processing one for error and one for success
 const jsonIconPath = "M20 16v-8l3 8v-8 M15 8a2 2 0 0 1 2 2v4a2 2 0 1 1 -4 0v-4a2 2 0 0 1 2 -2z M1 8h3v6.5a1.5 1.5 0 0 1 -3 0v-.5 M7 15a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1h1a1 1 0 0 1 1 1";
 const processingIconPath = "M12 6l0 -3 M16.25 7.75l2.15 -2.15 M18 12l3 0 M16.25 16.25l2.15 2.15 M12 18l0 3 M7.75 16.25l-2.15 2.15 M6 12l-3 0 M7.75 7.75l-2.15 -2.15";
