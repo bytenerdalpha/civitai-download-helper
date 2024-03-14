@@ -52,7 +52,8 @@ async def create_item(item: Item):
             return {"message": "File already exists."}
         else:
             print("File does not exist.")
-            downloadUrl = f"https://civitai.com/api/download/models/{item.modelVersionId}"
+            downloadUrl = item.url
+            # downloadUrl = f"https://civitai.com/api/download/models/{item.modelVersionId}"
             headers = {"Authorization": f"Bearer {TOKEN}"}
 
             async with aiohttp.ClientSession(headers=headers) as session:
