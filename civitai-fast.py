@@ -26,6 +26,7 @@ MODEL_DOWNLOAD_DIR = os.getenv("MODEL_DOWNLOAD_DIR")
 EMBEDDING_DOWNLOAD_DIR = os.getenv("EMBEDDING_DOWNLOAD_DIR")
 resourceType_dir_mapping = {
     "lora": LORA_DOWNLOAD_DIR,
+    "lycoris": LORA_DOWNLOAD_DIR,
     "model": MODEL_DOWNLOAD_DIR,
     "checkpoint": MODEL_DOWNLOAD_DIR,
     "embedding": EMBEDDING_DOWNLOAD_DIR

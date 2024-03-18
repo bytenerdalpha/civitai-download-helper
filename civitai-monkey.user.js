@@ -77,13 +77,14 @@
 
     function replaceRunButton() {
 
-        let div = document.createElement('div');
+        // let div = document.createElement('div');
         // div.innerHTML = civ_down_icon;
         // btnBar.prepend(div);
 
 
-        const iconText = document.querySelector(".mantine-Stack-root.mantine-896gbg")
-        const runButton = document.querySelector(".mantine-UnstyledButton-root.mantine-ActionIcon-root.mantine-1tbxpdw").closest("button");
+        // const iconText = document.querySelector(".mantine-Stack-root.mantine-896gbg")
+        const runButton = document.querySelector(".mantine-UnstyledButton-root.mantine-ActionIcon-root.mantine-1tbxpdw");
+        console.log("RunBtn", runButton)
         const icon = document.querySelector(".tabler-icon.tabler-icon-x");
         // icon.innerHTML = civ_down_icon;
         // icon.setAttribute("d", jsonIconPath);
@@ -91,12 +92,12 @@
         icon.parentElement.setAttribute("stroke", "white");
 
 
-        runButton.addEventListener("mouseover", (event) => {
-            const tooltip = runButton.previousSibling;
-            if (tooltip.classList.contains("mantine-Tooltip-tooltip")) {
-                tooltip.innerText = "Download Resources through civ-py";
-            }
-        });
+        // runButton.addEventListener("mouseover", (event) => {
+        //     const tooltip = runButton.previousSibling;
+        //     if (tooltip.classList.contains("mantine-Tooltip-tooltip")) {
+        //         tooltip.innerText = "Download Resources through civ-py";
+        //     }
+        // });
 
         const downloadURI = (uri, name) => {
             const link = document.createElement("a");
@@ -110,6 +111,7 @@
         runButton.addEventListener("click", async (event) => {
             event.stopImmediatePropagation();
             icon.setAttribute("d", processingIconPath);
+            console.log("TETS")
             runButton.style.backgroundColor = "#1971c2";
             let els = document.getElementsByClassName("mantine-4xj3rk");
 
@@ -165,7 +167,10 @@
     }
 
     // Replace the run button when the page loads
-    replaceRunButton();
+    window.addEventListener('load', function() {
+        replaceRunButton();// your code here
+    }, false);
+
 
     // use a mutation observer to replace the run button when the page title changes
     const titleObserver = new MutationObserver(replaceRunButton);
